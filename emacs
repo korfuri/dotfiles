@@ -2,10 +2,13 @@
 
 ;; Load stuff from .emacs.d
 (add-to-list 'load-path "~/.emacs.d")
+;; If using common dotfiles, use the emacs.d there too
+(if (file-exists-p "~/.dotfiles/emacs.d")
+    (add-to-list 'load-path "~/.dotfiles/emacs.d"))
 
-
-;; Machine-specific stuff is in .emacs.d/emacs.local.el
-(load-file "~/.emacs.d/machine.emacs.el")
+;; Machine-specific stuff is in .emacs.d/machine.emacs.el
+(if (file-exists-p "~/.emacs.d/machine.emacs.el")
+    (load-file "~/.emacs.d/machine.emacs.el"))
 
 ;; Custom does its things here
 
