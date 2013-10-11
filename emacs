@@ -4,8 +4,8 @@
 (add-to-list 'load-path "~/.emacs.d")
 
 
-;; Machine-specific stuff is in .emacs.d/machine.emacs.el
-(load-file "~/.emacs.d/google-ucorfa.el")
+;; Machine-specific stuff is in .emacs.d/emacs.local.el
+(load-file "~/.emacs.d/machine.emacs.el")
 
 ;; Custom does its things here
 
