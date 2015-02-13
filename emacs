@@ -108,7 +108,8 @@
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 
-;; By heder@google.com
+;; Hannes' trick to pipe a region to a command, and replace it with
+;; the command's output
 (defun shell-command-on-region-in-place ()
   "Like shell-command-on-region but replaces the selected buffer with the result."
   (interactive)
