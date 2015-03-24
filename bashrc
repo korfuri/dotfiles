@@ -98,6 +98,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export PATH="$HOME"/bin:"$PATH"
+export EDITOR='emacs'
 
 alias clean='rm -i *~; echo'
 
