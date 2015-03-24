@@ -13,14 +13,27 @@
 ;; Custom does its things here
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(case-fold-search t)
+ '(company-idle-delay 0)
+ '(company-minimum-prefix-length 1)
+ '(global-company-mode t)
+ '(ido-confirm-unique-completion t)
+ '(ido-default-buffer-method (quote samewindow))
+ '(ido-default-file-method (quote selected-window))
+ '(ido-everywhere t)
  '(inhibit-startup-screen t))
  '(global-font-lock-mode t nil (font-lock))
 
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(company-tooltip ((t (:background "white" :foreground "magenta" :width normal)))))
 
 ;; Various personal settings
 
@@ -78,10 +91,7 @@
 ;; Ido !
 
 (require 'ido)
-(custom-set-variables '(ido-everywhere t)
-                      '(ido-confirm-unique-completion t)
-                      '(ido-default-file-method 'selected-window)
-                      '(ido-default-buffer-method 'samewindow))
+
 (ido-mode t)
 
 (global-set-key
