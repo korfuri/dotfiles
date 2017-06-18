@@ -27,6 +27,10 @@
 (require 'diminish)
 (require 'bind-key)
 
+;; Try lets you try packages without installing them
+(use-package try
+  :ensure t)
+
 ;; Do not save Custom settings here. Use ~/.emacs.d/machine.emacs.el.
 (setq custom-file "~/.emacs.d/machine.emacs.el")
 (load custom-file)
