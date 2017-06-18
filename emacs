@@ -1,10 +1,10 @@
 ;; Uriel Corfa's .emacs
 
 ;; Load stuff from .emacs.d
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/site-lisp")
 ;; If using common dotfiles, use the emacs.d there too
-(if (file-exists-p "~/.dotfiles/emacs.d")
-    (add-to-list 'load-path "~/.dotfiles/emacs.d"))
+(if (file-exists-p "~/.dotfiles/emacs.d/site-lisp")
+    (add-to-list 'load-path "~/.dotfiles/emacs.d/site-lisp"))
 
 ;; Machine-specific stuff is in .emacs.d/machine.emacs.el
 (if (file-exists-p "~/.emacs.d/machine.emacs.el")
