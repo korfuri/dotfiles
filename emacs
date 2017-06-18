@@ -76,3 +76,4 @@
 
 ;; Optional cool things, use them in your machine.emacs.el:
 ; (use-package korfuri--golang)
+; (use-package korfuri--markdown)
