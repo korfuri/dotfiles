@@ -51,6 +51,7 @@
 (use-package korfuri--kill-buffer-and-its-windows)
 (use-package korfuri--flycheck)
 (use-package korfuri--autocomplete)
+(use-package korfuri--which-key)
 
 ;; Optional cool things, use them in your machine.emacs.el:
 ; (use-package korfuri--golang)
