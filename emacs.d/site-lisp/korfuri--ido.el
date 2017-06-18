@@ -19,7 +19,8 @@
  '(ido-confirm-unique-completion t)
  '(ido-default-buffer-method (quote samewindow))
  '(ido-default-file-method (quote selected-window))
- '(ido-everywhere t))
+ '(ido-everywhere t)
+ '(ido-enable-flex-matching t))
 
 (provide 'korfuri--ido)
 ;;; korfuri--ido.el ends here
