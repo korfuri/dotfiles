@@ -14,5 +14,5 @@ function installfile() {
 
 installfile tmux.conf
 installfile emacs
-installfile emacs.d
+ln -s "${D?}"/emacs.d/site-lisp "${TARGET?}"/.emacs.d/site-lisp
 installfile bashrc
