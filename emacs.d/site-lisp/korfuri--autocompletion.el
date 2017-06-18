@@ -8,7 +8,7 @@
 
 (use-package company
   :ensure t
-  :init (add-hook 'after-init-hook 'global-company-mode))
+  :init (global-company-mode))
 
 (define-key company-mode-map [remap indent-for-tab-command]
   'company-indent-for-tab-command)

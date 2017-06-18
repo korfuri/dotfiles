@@ -9,10 +9,7 @@
 ;; We're going to need lots of packages. Note that we set this up but we'll download them with use-package.
 (require 'package)
 (setq package-enable-at-startup nil)
-(add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(add-to-list 'package-archives '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/"))
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
 (package-initialize)
 
 ;; This is from
@@ -28,12 +25,8 @@
 (require 'bind-key)
 
 ;; Try lets you try packages without installing them
-(use-package try
-  :ensure t)
-
-;; Do not save Custom settings here. Use ~/.emacs.d/machine.emacs.el.
-(setq custom-file "~/.emacs.d/machine.emacs.el")
-(load custom-file)
+;; Provided in site-lisp/
+(use-package try)
 
 ;; Everything other than the bootstrapping and Custom's config should
 ;; go into separate files loaded below.
@@ -62,6 +55,8 @@
 
 ;; Machine-specific stuff is in .emacs.d/machine.emacs.el
 ;; This goes to the end of .emacs so machine.emacs.el can override
-;; anything it wants.
+;; anything it wants
+;; Do not save Custom settings here. Use ~/.emacs.d/machine.emacs.el.
+(setq custom-file "~/.emacs.d/machine.emacs.el")
 (if (file-exists-p "~/.emacs.d/machine.emacs.el")
     (load-file "~/.emacs.d/machine.emacs.el"))
