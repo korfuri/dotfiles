@@ -102,6 +102,10 @@ export EDITOR='emacs'
 
 alias clean='rm -i *~; echo'
 
+# In case we'll do Go on this system, set up ~/go as GOPATH. Override
+# in .bashrc.local as needed.
+export GOPATH=~/go
+export PATH="$PATH:$GOPATH/bin"
 if [ -f "$HOME/.bashrc.local" ]; then
   source "$HOME/.bashrc.local"
 fi

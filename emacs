@@ -73,3 +73,6 @@
 (use-package korfuri--tmux)
 (use-package korfuri--kill-buffer-and-its-windows)
 (use-package korfuri--flycheck)
+
+;; Optional cool things, use them in your machine.emacs.el:
+; (use-package korfuri--golang)
