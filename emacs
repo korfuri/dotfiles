@@ -40,6 +40,7 @@
 
 (use-package korfuri--misc)
 (use-package korfuri--theme)
+(use-package korfuri--hydra)
 (use-package korfuri--windmove)
 (use-package korfuri--ido)
 (use-package korfuri--kill-ring-rotate)
