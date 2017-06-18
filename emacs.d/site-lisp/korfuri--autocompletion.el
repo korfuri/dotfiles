@@ -1,3 +1,11 @@
+(custom-set-variables
+ '(company-idle-delay 0)
+ '(company-minimum-prefix-length 1)
+ '(global-company-mode t))
+
+(custom-set-faces
+ '(company-tooltip ((t (:background "white" :foreground "magenta" :width normal)))))
+
 (use-package company
   :ensure t
   :init (add-hook 'after-init-hook 'global-company-mode))

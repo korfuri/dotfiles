@@ -1,3 +1,9 @@
+(custom-set-variables
+ '(case-fold-search t)
+ '(inhibit-startup-screen t)
+ '(suggest-key-bindings 1))
+ '(global-font-lock-mode t nil (font-lock))
+
 ;; Face height
 (set-face-attribute 'default nil :height 105)
 ;; turn on font-lock mode

@@ -31,33 +31,9 @@
 (require 'diminish)
 (require 'bind-key)
 
-;; Custom does its things here
-
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(case-fold-search t)
- '(company-idle-delay 0)
- '(company-minimum-prefix-length 1)
- '(global-company-mode t)
- '(ido-confirm-unique-completion t)
- '(ido-default-buffer-method (quote samewindow))
- '(ido-default-file-method (quote selected-window))
- '(ido-everywhere t)
- '(inhibit-startup-screen t)
- '(package-selected-packages
-   (quote
-    (go-eldoc company-go go-mode company flycheck markdown-mode zenburn-theme use-package))))
- '(global-font-lock-mode t nil (font-lock))
-
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(company-tooltip ((t (:background "white" :foreground "magenta" :width normal)))))
+;; Do not save Custom settings here. Use ~/.emacs.d/machine.emacs.el.
+(setq custom-file "~/.emacs.d/machine.emacs.el")
+(load custom-file)
 
 ;; Everything other than the bootstrapping and Custom's config should
 ;; go into separate files loaded below.
