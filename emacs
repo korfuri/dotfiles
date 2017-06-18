@@ -6,10 +6,6 @@
 (if (file-exists-p "~/.dotfiles/emacs.d/site-lisp")
     (add-to-list 'load-path "~/.dotfiles/emacs.d/site-lisp"))
 
-;; Machine-specific stuff is in .emacs.d/machine.emacs.el
-(if (file-exists-p "~/.emacs.d/machine.emacs.el")
-    (load-file "~/.emacs.d/machine.emacs.el"))
-
 ;; We're going to need lots of packages. Note that we set this up but we'll download them with use-package.
 (require 'package)
 (setq package-enable-at-startup nil)
@@ -53,3 +49,10 @@
 ;; Optional cool things, use them in your machine.emacs.el:
 ; (use-package korfuri--golang)
 ; (use-package korfuri--markdown)
+; (use-package korfuri--python)
+
+;; Machine-specific stuff is in .emacs.d/machine.emacs.el
+;; This goes to the end of .emacs so machine.emacs.el can override
+;; anything it wants.
+(if (file-exists-p "~/.emacs.d/machine.emacs.el")
+    (load-file "~/.emacs.d/machine.emacs.el"))
