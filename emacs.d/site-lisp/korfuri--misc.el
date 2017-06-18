@@ -30,9 +30,6 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
-;; Prevent typos
-(global-set-key (kbd "C-x C-b") 'switch-to-buffer)
-
 ;; Browse
 (global-set-key [C-down-mouse-1] 'browse-url-at-mouse)
 

@@ -52,6 +52,7 @@
 (use-package korfuri--flycheck)
 (use-package korfuri--autocomplete)
 (use-package korfuri--which-key)
+(use-package korfuri--ibuffer)
 
 ;; Optional cool things, use them in your machine.emacs.el:
 ; (use-package korfuri--golang)
