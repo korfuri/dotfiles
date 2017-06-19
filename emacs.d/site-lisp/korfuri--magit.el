@@ -18,7 +18,8 @@
 
   ("c" magit-commit "commit")
   ("m" magit-merge "merge")
-  ("p" magit-push "push")
+  ("P" magit-push "push")
+  ("p" magit-pull "pull")
   ("a" magit-stage-file "stage file")
 
   ("C" magit-checkout "checkout")

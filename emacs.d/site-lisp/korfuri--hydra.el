@@ -13,18 +13,24 @@
 (global-set-key
  (kbd "C-n")
  (defhydra hydra-move
-  (:body-pre (next-line))
-   "move"
-   ("n" next-line "next line")
-   ("p" previous-line "prev line")
-   ("f" forward-char "next char")
-   ("b" backward-char "prev char")
-   ("a" beginning-of-line "home")
-   ("e" move-end-of-line "endl")
-   ("v" scroll-up-command "scrollup")
+  ()
+   "
+    ^_v_^
+    ^_p_^
+_a_ _b_ _l_ _f_ _e_
+    ^_n_^
+    ^_V_^
+"
+   ("n" next-line "^")
+   ("p" previous-line "v")
+   ("f" forward-char ">")
+   ("b" backward-char "<")
+   ("a" beginning-of-line "<<")
+   ("e" move-end-of-line ">>")
+   ("v" scroll-up-command "^^")
    ;; Converting M-v to V here by analogy.
-   ("V" scroll-down-command "scrolldown")
-   ("l" recenter-top-bottom "recenter")))
+   ("V" scroll-down-command "vv")
+   ("l" recenter-top-bottom "x")))
 
 ;; Hydra for the M-g family of keybidings
 (global-set-key
