@@ -15,16 +15,16 @@
  (defhydra hydra-move
   (:body-pre (next-line))
    "move"
-   ("n" next-line)
-   ("p" previous-line)
-   ("f" forward-char)
-   ("b" backward-char)
-   ("a" beginning-of-line)
-   ("e" move-end-of-line)
-   ("v" scroll-up-command)
+   ("n" next-line "next line")
+   ("p" previous-line "prev line")
+   ("f" forward-char "next char")
+   ("b" backward-char "prev char")
+   ("a" beginning-of-line "home")
+   ("e" move-end-of-line "endl")
+   ("v" scroll-up-command "scrollup")
    ;; Converting M-v to V here by analogy.
-   ("V" scroll-down-command)
-   ("l" recenter-top-bottom)))
+   ("V" scroll-down-command "scrolldown")
+   ("l" recenter-top-bottom "recenter")))
 
 ;; Hydra for the M-g family of keybidings
 (global-set-key
