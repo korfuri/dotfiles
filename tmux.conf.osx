@@ -1,0 +1,4 @@
+# On OSX Sierra, you need some stupid dark magic to reattach your
+# shell to the "user namespace" whatever that is. Remember to `brew
+# install reattach-to-user-namespace` for this to work.
+set -g default-command "reattach-to-user-namespace -l ${SHELL}"
