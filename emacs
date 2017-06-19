@@ -46,6 +46,7 @@
 (use-package korfuri--autocomplete)
 (use-package korfuri--which-key)
 (use-package korfuri--ibuffer)
+(use-package korfuri--basic-major-modes)
 
 ;; Optional cool things, use them in your machine.emacs.el:
 ; (use-package korfuri--golang)
