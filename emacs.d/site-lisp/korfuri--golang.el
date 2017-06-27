@@ -58,5 +58,9 @@
     ("r" go-errcheck "errcheck")
     ("q" nil "quit")))
 
+;; Gotest runs Go tests directly from Emacs
+(use-package gotest
+  :ensure t)
+
 (provide 'korfuri--golang)
 ;;; korfuri--golang ends here
