@@ -43,7 +43,7 @@
 (use-package korfuri--tmux)
 (use-package korfuri--kill-buffer-and-its-windows)
 (use-package korfuri--flycheck)
-(use-package korfuri--autocomplete)
+(use-package korfuri--autocompletion)
 (use-package korfuri--which-key)
 (use-package korfuri--ibuffer)
 (use-package korfuri--basic-major-modes)
