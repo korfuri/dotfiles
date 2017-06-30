@@ -1,3 +1,12 @@
+;;; korfuri--autocompletion -- my setup for company
+
+;;; Commentary:
+;; Other modules should work regardless of whether this is enabled,
+;; but language modules should always set up company for their
+;; language in case company is enabled.
+
+;;; Code:
+
 (custom-set-variables
  '(company-idle-delay 0)
  '(company-minimum-prefix-length 1)
@@ -27,4 +36,4 @@
   (let ((completion-at-point-functions completion-at-point-functions-saved))
     (company-complete-common)))
 
-(provide korfuri--autocompletion)
+(provide 'korfuri--autocompletion)
