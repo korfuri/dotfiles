@@ -54,7 +54,7 @@
     ("i r" go-remove-unused-imports "remove-unused-imports")
     ("i j" go-goto-imports "jump-to-imports")
     ("f" gofmt "gofmt")
-    ("d" godoc "godoc")
+    ("d" godoc "godoc-at-point")
     ("r" go-errcheck "errcheck")
     ("q" nil "quit")))
 
