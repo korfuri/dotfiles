@@ -49,7 +49,7 @@
     ("a" beginning-of-defun "beginning-of-defun")
     ("e" end-of-defun "end-of-defun")
     ("j" godef-jump "godef-jump")
-    ("d" godef-describe "godef-describe")
+    ("D" godef-describe "godef-describe")
     ("i a" go-import-add "import-add")
     ("i r" go-remove-unused-imports "remove-unused-imports")
     ("i j" go-goto-imports "jump-to-imports")
