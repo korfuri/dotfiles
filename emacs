@@ -50,10 +50,12 @@
 
 ;; Optional cool things, use them in your machine.emacs.el:
 ; (use-package korfuri--golang)
-; (use-package korfuri--markdown)
+; (use-package korfuri--markdown-mode)
 ; (use-package korfuri--python)
 ; (use-package korfuri--magit)
 ; (use-package korfuri--osx)
+; (use-package korfuri--ruby)
+; (use-package korfuri--protobuf)
 
 ;; Machine-specific stuff is in .emacs.d/machine.emacs.el
 ;; This goes to the end of .emacs so machine.emacs.el can override
