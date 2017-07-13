@@ -103,6 +103,8 @@ export EDITOR='emacs'
 
 alias clean='rm -i *~; echo'
 
+source "$HOME/.dotfiles/git-completion.bash"
+
 # In case we'll do Go on this system, set up ~/go as GOPATH. Override
 # in .bashrc.local as needed.
 export GOPATH=~/go
