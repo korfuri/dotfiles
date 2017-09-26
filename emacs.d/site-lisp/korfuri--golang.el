@@ -42,9 +42,9 @@
 
 ;; Go mode hydra
 (define-key
-  go-mode-map (kbd "C-.")
+  go-mode-map (kbd "C-c .")
   (defhydra hydra-golang
-    (go-mode-map "C-.")
+    (go-mode-map "C-c .")
     "Golang"
     ("a" beginning-of-defun "beginning-of-defun")
     ("e" end-of-defun "end-of-defun")
