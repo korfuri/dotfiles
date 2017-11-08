@@ -3,7 +3,8 @@
   (package-install 'zenburn-theme))
 
 (defvar zenburn-override-colors-alist
-  '(("zenburn-bg" . "#000000")
+  '(("zenburn-bg"       . "#000000")
+    ("zenburn-bg-05"    . "#408040")
     ("zenburn-bg+05"    . "#101010")
     ("zenburn-bg+1"     . "#202020")
     ("zenburn-bg+2"     . "#404040")

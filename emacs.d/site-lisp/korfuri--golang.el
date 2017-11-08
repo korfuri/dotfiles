@@ -9,6 +9,7 @@
 ;; * `go get -u github.com/nsf/gocode` for company & eldoc
 ;; * `go get -u github.com/rogpeppe/godef` for godef
 ;; * `go get -u github.com/kisielk/errcheck` for errcheck
+;; * `go get   golang.org/x/tools/cmd/guru` for guru
 
 ;;; Code:
 
@@ -39,6 +40,12 @@
 
 ;; Errcheck
 (use-package go-errcheck)
+
+;; Guru
+;; Guru finds references to a symbol (while godef finds the definition of a symbol)
+(use-package go-guru
+  :ensure t
+  :init (add-hook 'go-mode-hook #'go-guru-hl-identifier-mode))
 
 ;; Go mode hydra
 (define-key
