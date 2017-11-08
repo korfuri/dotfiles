@@ -1,3 +1,4 @@
+aggregator
 baz
 chronos
 flyspell
@@ -8,3 +9,4 @@ proto
 quux
 qux
 SLA
+timeseries
