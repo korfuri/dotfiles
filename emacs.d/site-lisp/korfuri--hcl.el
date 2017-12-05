@@ -5,6 +5,7 @@
 ;;; Code:
 
 (use-package "hcl-mode"
+  :ensure t
   :mode ("\\.tf\\'" . hcl-mode))
 
 (provide 'korfuri--hcl)
