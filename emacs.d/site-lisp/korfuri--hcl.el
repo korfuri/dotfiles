@@ -5,8 +5,15 @@
 ;;; Code:
 
 (use-package "hcl-mode"
+  :ensure t)
+
+(use-package "terraform-mode"
   :ensure t
-  :mode ("\\.tf\\'" . hcl-mode))
+  :mode ("\\.tf\\'" . terraform-mode))
+
+(use-package "company-terraform"
+  :ensure t
+  :init (company-terraform-init))
 
 (provide 'korfuri--hcl)
 ;;; korfuri--hcl.el ends here
