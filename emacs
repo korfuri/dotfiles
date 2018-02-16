@@ -48,6 +48,7 @@
 (use-package korfuri--ibuffer)
 (use-package korfuri--basic-major-modes)
 (use-package korfuri--flyspell)
+(use-package korfuri--hideshow)
 
 ;; Optional cool things, use them in your machine.emacs.el:
 ; (use-package korfuri--golang)
