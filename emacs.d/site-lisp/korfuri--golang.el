@@ -55,7 +55,8 @@
     "Golang"
     ("a" beginning-of-defun "beginning-of-defun")
     ("e" end-of-defun "end-of-defun")
-    ("j" godef-jump "godef-jump")
+    ("j" godef-jump-other-window "godef-jump-other-window")
+    ("J" godef-jump "godef-jump")
     ("D" godef-describe "godef-describe")
     ("i a" go-import-add "import-add")
     ("i r" go-remove-unused-imports "remove-unused-imports")
