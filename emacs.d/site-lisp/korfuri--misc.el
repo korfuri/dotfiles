@@ -37,4 +37,16 @@
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 
+;; Disable a minor mode in every buffer
+
+;; This can be used to reset the font size in every buffer:
+;;    `M-x global-disable-mode text-scale-mode'.
+(defun global-disable-mode (mode-fn)
+  "Disable `MODE-FN' in ALL buffers."
+  (interactive "aMode: ")
+  (dolist (buffer (buffer-list))
+    (with-current-buffer buffer
+      (funcall mode-fn -1))))
+
 (provide 'korfuri--misc)
+;;; korfuri--misc.el ends here
