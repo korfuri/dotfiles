@@ -1,0 +1,9 @@
+[user]
+	email = uriel.corfa@grabtaxi.com
+	name = Uriel Corfa
+
+[url "git://github.com/"]
+	insteadOf = github:
+[url "git+ssh://git@github.com/"]
+	pushInsteadOf = github:
+
