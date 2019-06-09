@@ -9,7 +9,7 @@
 (use-package flyspell-popup
   :ensure t
   :config (progn
-	    (add-hook 'flyspell-mode-hook #'flyspell-popup-auto-correct-mode)
+	    (remove-hook 'flyspell-mode-hook #'flyspell-popup-auto-correct-mode)
 	    (define-key flyspell-mode-map (kbd "C-c ;") #'flyspell-popup-correct)))
 
 (custom-set-variables
