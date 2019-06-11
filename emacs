@@ -10,6 +10,7 @@
 (require 'package)
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/"))
+;; (add-to-list 'package-archives (cons "melpa" "https://melpa.org/packages/") t)
 (package-initialize)
 
 ;; This is from
