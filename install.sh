@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Assumes you cloned into ~/.dotfiles
 D=~/.dotfiles
 TARGET=~/
