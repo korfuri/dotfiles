@@ -1,2 +1,4 @@
 emacs.d/machine.emacs.el
 *~
+*.elc
+emacs.d/elpa/use-package-*
